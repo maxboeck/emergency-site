@@ -1,0 +1,13 @@
+html {
+    overflow-y: scroll;
+}
+
+main {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+    main {
+        padding: 3rem;
+    }
+}

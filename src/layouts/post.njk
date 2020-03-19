@@ -1,0 +1,20 @@
+---
+layout: base
+---
+<article class="post h-entry">
+    <a href="/" class="post__backlink">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 11H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707 1.414-1.414L8.414 13H18z"/>
+        </svg>
+        Back to Index
+    </a>
+    <header class="post__header">
+        <h1 class="post__title p-name">{{ title }}</h1>
+        <time class="post__date dt-published" datetime="{{ page.date | dateToISO }}">
+            {{ page.date | dateToFormat(meta.dateFormat) }}
+        </time>
+    </header>
+    <div class="post__content e-content">
+        {{ content | safe }}
+    </div>
+</article>
