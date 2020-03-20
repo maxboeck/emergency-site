@@ -1,13 +1,17 @@
 {
   "name": "emergency-site",
   "version": "1.0.0",
-  "description": "a boilerplate for emergency information websites",
+  "description": "A boilerplate for emergency information websites",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
     "start": "npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/maxboeck/emergency-site"
   },
   "author": "Max Böck",
   "license": "MIT",
