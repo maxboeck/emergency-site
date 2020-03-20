@@ -40,7 +40,6 @@ module.exports = function(config) {
 
     // Pass-through files
     config.addPassthroughCopy('src/static')
-    config.addPassthroughCopy('src/site.webmanifest')
     config.addPassthroughCopy('src/robots.txt')
 
     // Deep-Merge
