@@ -19,11 +19,12 @@ a {
     font-weight:500;
     color: var(--brand-color);
 }
-
+a:hover {
+    text-decoration: none;
+}
 a:focus {
     outline: 5px solid var(--brand-color);
 }
-
 a > svg {
     fill: currentColor;
 }

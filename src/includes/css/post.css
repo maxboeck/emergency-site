@@ -1,8 +1,8 @@
-.post__backlink {
+.backlink {
     display:inline-flex;
     align-items: center;
 }
 
-.post__content > * {
+.post > * {
     margin-top: 1em;
 }
