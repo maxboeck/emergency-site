@@ -9,7 +9,7 @@ Since the first U.S. case of the coronavirus was identified in Washington state 
 
 Social distancing is widely seen as the best available means to "flatten the curve of the pandemic," a phrase that epidemiologists use to describe slowing the spread of infection. This approach can save lives by keeping local health care systems from being overwhelmed.
 
-![a chart of covid-19 cases](/static/images/chart.jpg)
+![a chart of covid-19 cases](/static/images/uploads/chart.jpg)
 
 In response to mounting cases, states have begun closing schools, banning large gatherings and urging people to stay home when possible. On Monday, President Trump announced [new guidelines]() recommending that Americans avoid gathering in groups of more than 10 people, discretionary travel and going out to eat.
 
