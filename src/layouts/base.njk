@@ -13,5 +13,15 @@
     <body class="site">
         <main>{{ content | safe }}</main>
         {% include "footer.njk" %}
+
+        {% if build.env === 'production' %}
+        <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+        </script>
+        {% endif %}
     </body>
 </html>
