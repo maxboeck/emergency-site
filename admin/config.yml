@@ -3,7 +3,8 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "static/images"
+media_folder: "src/static/images/uploads"
+public_folder: "/static/images/uploads"
 
 collections:
   - name: "posts"
