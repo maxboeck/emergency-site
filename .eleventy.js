@@ -2,8 +2,8 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 
-const filters = require('./_eleventy/filters.js')
-const transforms = require('./_eleventy/transforms.js')
+const filters = require('./eleventy/filters.js')
+const transforms = require('./eleventy/transforms.js')
 
 require('dotenv').config()
 
