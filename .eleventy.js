@@ -39,6 +39,7 @@ module.exports = function(config) {
     config.addLayoutAlias('post', 'post.njk')
 
     // Pass-through files
+    config.addPassthroughCopy('admin')
     config.addPassthroughCopy('src/static')
     config.addPassthroughCopy('src/robots.txt')
 
