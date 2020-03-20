@@ -1,4 +1,5 @@
 const htmlmin = require('html-minifier')
+require('dotenv').config()
 
 module.exports = {
     htmlmin: function(content, outputPath) {
