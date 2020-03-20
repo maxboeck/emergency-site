@@ -3,9 +3,13 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.6;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    color: var(--text-color);
     font-size: 1.5rem;
 }
+
+h1 { font-size: 2em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.125em }
+h4 { font-size: 1em }
 
 p {
     max-width: 60ch;
@@ -22,4 +26,8 @@ a:focus {
 
 a > svg {
     fill: currentColor;
+}
+
+.h-anchor {
+    text-decoration: none;
 }

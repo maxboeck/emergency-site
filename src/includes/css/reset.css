@@ -12,7 +12,7 @@ ol {
 }
 
 li + li {
-    margin-top:.5em;
+    margin-top:.25em;
 }
 
 /* Remove default margin */
