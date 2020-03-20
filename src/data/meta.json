@@ -3,5 +3,9 @@
     "url": "https://your-url-here.com",
     "description": "A boilerplate for emergency information websites.",
     "lang": "en",
-    "dateFormat": "dd LLL yyyy"
+    "dateFormat": "dd LLLL yyyy",
+    "contact": {
+        "email": "information@emergency.org",
+        "telephone": "+01 234 567 890"
+    }
 }

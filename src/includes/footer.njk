@@ -1,0 +1,8 @@
+<footer class="footer">
+    {% if meta.contact.email %}
+        <p><a href="mailto:{{ meta.contact.email }}">{{ meta.contact.email }}</a></p>
+    {% endif %}
+    {% if meta.contact.telephone %}
+        <p><a href="tel:{{ meta.contact.telephone }}">{{ meta.contact.telephone }}</a></p>
+    {% endif %}
+</footer>

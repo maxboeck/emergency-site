@@ -2,12 +2,12 @@ html {
     overflow-y: scroll;
 }
 
-main {
-    padding: 1rem;
+.site {
+    margin: var(--spacing);
 }
 
-@media screen and (min-width: 40em) {
-    main {
-        padding: 3rem;
-    }
+.footer {
+    padding-top: var(--spacing);
+    margin-top: var(--spacing);
+    border-top: 2px solid;
 }

@@ -41,7 +41,6 @@ module.exports = function(config) {
     // Pass-through files
     config.addPassthroughCopy('src/site.webmanifest')
     config.addPassthroughCopy('src/robots.txt')
-    config.addPassthroughCopy('src/favicon.ico')
 
     // Deep-Merge
     config.setDataDeepMerge(true)

@@ -6,9 +6,13 @@
 }
 
 /* Remove default padding */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
+}
+
+li + li {
+    margin-top:.5em;
 }
 
 /* Remove default margin */
@@ -18,8 +22,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 figure,
 blockquote,
 dl,

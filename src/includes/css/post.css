@@ -3,10 +3,6 @@
     align-items: center;
 }
 
-.post__backlink > svg {
-    fill: currentColor;
-}
-
 .post__content > * {
     margin-top: 1em;
 }

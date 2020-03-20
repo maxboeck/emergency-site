@@ -10,9 +10,8 @@
 
         {% include "meta.njk" %}
     </head>
-    <body>
-        <main>
-            {{ content | safe }}
-        </main>
+    <body class="site">
+        <main>{{ content | safe }}</main>
+        {% include "footer.njk" %}
     </body>
 </html>
