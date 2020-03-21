@@ -2,6 +2,8 @@
 
 A boilerplate for emergency information websites. (WIP)
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/emergency-site)  
+
 * Static site
 * Optimized for maximum resilience
 * Optimized for first roundtrip (> 14KB)
