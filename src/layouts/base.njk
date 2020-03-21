@@ -11,7 +11,8 @@
         {% include "meta.njk" %}
     </head>
     <body class="site">
-        <main>{{ content | safe }}</main>
+        {% include "header.njk" %}
+        <main class="main">{{ content | safe }}</main>
         {% include "footer.njk" %}
 
         {% if build.env === 'production' %}

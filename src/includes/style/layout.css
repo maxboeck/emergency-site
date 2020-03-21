@@ -2,12 +2,16 @@ html {
     overflow-y: scroll;
 }
 
-.site {
+.header,
+.main,
+.footer {
     padding: var(--spacing);
 }
 
+.header {
+    
+}
+
 .footer {
-    padding-top: var(--spacing);
-    margin-top: var(--spacing);
     border-top: 2px solid;
 }

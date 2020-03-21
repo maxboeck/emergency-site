@@ -25,7 +25,7 @@ a:hover {
 a:focus {
     outline: 5px solid var(--brand-color);
 }
-a > svg {
+svg {
     fill: currentColor;
 }
 
