@@ -28,7 +28,7 @@ module.exports = function(config) {
     })
 
     // Transform
-    Object.keys(filters).forEach(transformName => {
+    Object.keys(transforms).forEach(transformName => {
         config.addTransform(transformName, transforms[transformName])
     })
 
