@@ -29,7 +29,7 @@ module.exports = function(config) {
         typographer: true
     }).use(markdownItAnchor, {
         permalink: true,
-        permalinkClass: 'h-anchor',
+        permalinkClass: 'anchor',
         permalinkSymbol: '#'
     })
     config.setLibrary('md', mdlib)

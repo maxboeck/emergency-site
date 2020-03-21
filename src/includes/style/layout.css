@@ -2,16 +2,25 @@ html {
     overflow-y: scroll;
 }
 
-.header,
-.main,
-.footer {
+.site {
+    display:flex;
+    flex-direction: column;
+}
+
+.site > * {
     padding: var(--spacing);
 }
 
 .header {
-    
+    flex:none;
+    border-bottom: 2px solid;
+}
+
+.main {
+    flex: 1 0 auto;
 }
 
 .footer {
+    flex:none;
     border-top: 2px solid;
 }

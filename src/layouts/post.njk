@@ -1,13 +1,6 @@
 ---
 layout: base
 ---
-<a href="/" class="backlink">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M18 11H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707 1.414-1.414L8.414 13H18z"/>
-    </svg>
-    Back to Index
-</a>
-
 <article class="post h-entry">
     <header>
         <h1 class="p-name">{{ title }}</h1>
@@ -17,4 +10,13 @@ layout: base
     </header>
     
     {{ content | safe }}
+
+    <footer>
+        <a href="/" class="iconlink">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 11H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707 1.414-1.414L8.414 13H18z"/>
+            </svg>
+            Back to Index
+        </a>
+    </footer>
 </article>
