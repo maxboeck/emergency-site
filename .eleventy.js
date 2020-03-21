@@ -1,15 +1,24 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss')
+const pluginPWA = require('eleventy-plugin-pwa')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 
 const filters = require('./eleventy/filters.js')
 const transforms = require('./eleventy/transforms.js')
 
+const workboxOptions = {
+    swDest: './dist/sw.js',
+    globPatterns: ['index.html', 'posts/**/*.html'],
+    clientsClaim: true,
+    skipWaiting: true
+}
+
 require('dotenv').config()
 
 module.exports = function(config) {
     // Plugins
     config.addPlugin(pluginRss)
+    config.addPlugin(pluginPWA, workboxOptions)
 
     // Filters
     Object.keys(filters).forEach(filterName => {

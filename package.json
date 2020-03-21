@@ -20,6 +20,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "clean-css": "^4.2.3",
     "dotenv": "^8.2.0",
+    "eleventy-plugin-pwa": "^1.0.8",
     "html-minifier": "^4.0.0",
     "luxon": "^1.22.0",
     "markdown-it": "^10.0.0",
