@@ -7,8 +7,10 @@ const filters = require('./eleventy/filters.js')
 const transforms = require('./eleventy/transforms.js')
 
 const workboxOptions = {
+    cacheId: 'emergency-site',
     swDest: './dist/sw.js',
-    globPatterns: ['index.html', 'posts/**/*.html'],
+    globPatterns: ['**/*.html'],
+    globIgnores: ['admin/**/*', '404/**/*'],
     clientsClaim: true,
     skipWaiting: true
 }
