@@ -1,7 +1,6 @@
 # Emergency Site Template
 
-A boilerplate for emergency information websites. (WIP)  
-[Demo Site](https://emergency-site.dev)  
+A boilerplate for emergency information websites. (WIP) ([Demo Site](https://emergency-site.dev))
 
 In case of emergency, many organizations need a quick way to publish critical information. Exisiting CMS websites are often unable to handle sudden spikes in traffic, and local infrastructure might be damaged, leaving people with poor mobile connections.
 
