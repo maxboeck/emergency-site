@@ -4,7 +4,7 @@ A boilerplate for emergency information websites. (WIP) ([Demo Site](https://eme
 
 In case of emergency, many organizations need a quick way to publish critical information. Exisiting CMS websites are often unable to handle sudden spikes in traffic, and local infrastructure might be damaged, leaving people with poor mobile connections.
 
-This project aims to enable people to quickly publish a simple website that can withstand large amounts of traffic and will work in extreme conditions. It is built on the [rule of least power](https://en.wikipedia.org/wiki/Rule_of_least_power), using simple technologies for maximum resilience.
+This project aims to enable developers to quickly publish a simple website that can withstand large amounts of traffic and will work even under extreme conditions. It is built on the [rule of least power](https://en.wikipedia.org/wiki/Rule_of_least_power), using simple technologies for maximum resilience.
 
 ## Features
 
@@ -12,7 +12,7 @@ This project aims to enable people to quickly publish a simple website that can 
 * Optimized for first Roundtrip (> 14KB)
 * Basic Styling for Accessibility
 * One Request, Inlined CSS
-* Netlify CMS for collaborative Content Editing
+* [Netlify CMS](https://www.netlifycms.org/) for collaborative Content Editing
 * Offline Support with Service Worker
 
 ## Getting Started
