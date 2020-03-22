@@ -1,0 +1,13 @@
+.content {
+    padding: 1em 0;
+    max-width: 60ch;
+}
+
+.content > * + * {
+    margin-top: 1em;
+}
+
+.content ul,
+.content ol {
+    padding-left: 1em;
+}
