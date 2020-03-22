@@ -11,7 +11,7 @@ Social distancing is widely seen as the best available means to "flatten the cur
 
 ![a chart of covid-19 cases](/static/images/uploads/chart.jpg)
 
-In response to mounting cases, states have begun closing schools, banning large gatherings and urging people to stay home when possible. On Monday, the white house announced [new guidelines]() recommending that Americans avoid gathering in groups of more than 10 people, discretionary travel and going out to eat.
+In response to mounting cases, states have begun closing schools, banning large gatherings and urging people to stay home when possible. On Monday, the white house announced [new guidelines](https://www.whitehouse.gov/briefings-statements/coronavirus-guidelines-america/) recommending that Americans avoid gathering in groups of more than 10 people, discretionary travel and going out to eat.
 
 ### Countermeasures
 
