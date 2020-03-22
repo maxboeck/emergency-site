@@ -1,7 +1,7 @@
 :root {
     --brand-color: #F00;
     --spacing: 1em;
-    --font-size: 1rem;
+    --font-size: 1.25rem;
 }
 @media screen and (min-width: 40em) {
     :root {

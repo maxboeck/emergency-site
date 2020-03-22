@@ -15,14 +15,17 @@ html {
 
 .header {
     flex:none;
-    border-bottom: 2px solid;
+    color: #FFF;
+    background-color: var(--brand-color);
 }
-
+.header a {
+    color: inherit;
+}
 .main {
     flex: 1 0 auto;
 }
 
 .footer {
     flex:none;
-    border-top: 2px solid;
+    background-color: #E4E4E4;
 }

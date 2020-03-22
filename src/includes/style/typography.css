@@ -27,7 +27,7 @@ a:hover {
     text-decoration: none;
 }
 a:focus {
-    outline: 5px solid var(--brand-color);
+    outline: 5px solid;
 }
 .icon {
     display:inline-block;
