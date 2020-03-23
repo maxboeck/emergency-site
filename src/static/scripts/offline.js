@@ -27,11 +27,35 @@ class Notification {
 
     show() {
         this.$el.removeAttribute('hidden')
+        window.setTimeout(() => this.$el.classList.add('active'), 0)
     }
 
     hide() {
-        this.$el.setAttribute('hidden', true)
+        const transitionHandler = () => {
+            this.$el.innerHTML = ''
+            this.$el.setAttribute('hidden', true)
+            this.$el.removeEventListener('transitionend', transitionHandler)
+        }
+        this.$el.addEventListener('transitionend', transitionHandler)
+        this.$el.classList.remove('active')
     }
+}
+
+function showInitialServiceWorkerNotice() {
+    new Notification('This site is now available offline.')
+}
+
+function showNewVersionNotice() {
+    const onUpdate = () => worker.postMessage({ action: 'skipWaiting' })
+    const content = document.createElement('p')
+    const updateBtn = document.createElement('button')
+
+    content.innerText = 'A new version of this site is available.'
+    updateBtn.innerText = 'update'
+    updateBtn.addEventListener('click', onUpdate)
+    content.appendChild(updateBtn)
+
+    new Notification(content)
 }
 
 function offlineHandler() {
@@ -43,8 +67,9 @@ function offlineHandler() {
             )
         }
     }
-    checkConnectivity()
+
     window.addEventListener('offline', checkConnectivity)
+    checkConnectivity()
 }
 window.addEventListener('load', offlineHandler)
 
@@ -54,18 +79,9 @@ if ('serviceWorker' in navigator) {
             worker = reg.installing
             worker.addEventListener('statechange', () => {
                 if (worker.state === 'installed') {
-                    const onUpdate = () =>
-                        worker.postMessage({ action: 'skipWaiting' })
-                    const content = document.createElement('p')
-                    const updateBtn = document.createElement('button')
-
-                    content.innerText =
-                        'A new version of this site is available.'
-                    updateBtn.innerText = 'update'
-                    updateBtn.addEventListener('click', onUpdate)
-                    content.appendChild(updateBtn)
-
-                    new Notification(content)
+                    if (navigator.serviceWorker.controller) {
+                        showNewVersionNotice()
+                    }
                 }
             })
         })
