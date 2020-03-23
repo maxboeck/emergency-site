@@ -6,4 +6,13 @@
     bottom:0;
     padding: 1rem;
     background-color:#FFF;
+    font-size: 1rem;
+}
+@media screen and (min-width: 40em) {
+    .notification {
+        left: auto;
+        bottom: auto;
+        right: var(--spacing);
+        top: var(--spacing);
+    }
 }

@@ -11,7 +11,7 @@ const workboxOptions = {
     swDest: './dist/sw.js',
     globPatterns: ['**/*.html'],
     globIgnores: ['admin/**/*', '404/**/*'],
-    importScripts: ['/static/scripts/worker-fns.js'],
+    importScripts: ['/static/scripts/worker.js'],
     skipWaiting: false
 }
 
