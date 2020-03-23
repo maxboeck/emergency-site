@@ -16,7 +16,7 @@
         {% include "footer.njk" %}
         {% include "notification.njk" %}
 
-        {% if 1 or build.env === 'production' %}
+        {% if build.env === 'production' %}
         <script src="{{ '/static/scripts/offline.js' | url }}" async defer></script>
         {% endif %}
     </body>
