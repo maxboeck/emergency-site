@@ -11,8 +11,8 @@ const workboxOptions = {
     swDest: './dist/sw.js',
     globPatterns: ['**/*.html'],
     globIgnores: ['admin/**/*', '404/**/*'],
-    clientsClaim: true,
-    skipWaiting: true
+    importScripts: ['/static/scripts/worker-fns.js'],
+    skipWaiting: false
 }
 
 require('dotenv').config()
