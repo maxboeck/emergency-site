@@ -1,6 +1,6 @@
 ---
 title: Crisis Information Example Post
-date: 2020-03-22T14:00
+date: 2020-03-22T13:00:00.000Z
 ---
 
 Since the first U.S. case of the coronavirus was identified in Washington state on Jan. 21, health officials have identified thousands of cases across the United States. By March 17, the virus had expanded its presence from several isolated clusters in Washington, New York and California to all 50 states and the District of Columbia. To date, there have been over [120 deaths](https://coronavirus.jhu.edu/map.html) across the country.
