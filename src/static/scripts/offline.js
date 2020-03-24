@@ -3,7 +3,7 @@ let isRefreshing
 
 class Notification {
     constructor(content, timeout = false) {
-        this.$container = document.getElementById('notifications')
+        this.container = document.getElementById('notifications')
         this.content = content
         this.timeout = timeout
 
@@ -11,7 +11,7 @@ class Notification {
     }
 
     init() {
-        this.$container.innerHTML = ''
+        this.container.innerHTML = ''
         this.build()
         this.show()
 
@@ -21,34 +21,34 @@ class Notification {
     }
 
     build() {
-        this.$notification = document.createElement('div')
-        this.$notification.classList.add('notification')
+        this.notification = document.createElement('div')
+        this.notification.classList.add('notification')
 
         if (typeof this.content === 'string') {
-            const $msg = document.createElement('p')
-            $msg.innerText = this.content
-            this.$notification.appendChild($msg)
+            const msg = document.createElement('p')
+            msg.innerText = this.content
+            this.notification.appendChild(msg)
         } else {
-            this.$notification.appendChild(this.content)
+            this.notification.appendChild(this.content)
         }
 
-        this.$container.appendChild(this.$notification)
+        this.container.appendChild(this.notification)
     }
 
     show() {
-        window.setTimeout(() => this.$notification.classList.add('active'), 0)
+        window.setTimeout(() => this.notification.classList.add('active'), 0)
     }
 
     hide() {
         const transitionHandler = () => {
-            this.$notification.removeEventListener(
+            this.notification.removeEventListener(
                 'transitionend',
                 transitionHandler
             )
-            this.$container.removeChild(this.$notification)
+            this.container.removeChild(this.notification)
         }
-        this.$notification.addEventListener('transitionend', transitionHandler)
-        this.$notification.classList.remove('active')
+        this.notification.addEventListener('transitionend', transitionHandler)
+        this.notification.classList.remove('active')
     }
 }
 
@@ -62,13 +62,16 @@ function refresh() {
 
 function showNewVersionNotice() {
     const onUpdate = () => worker.postMessage({ action: 'skipWaiting' })
-    const content = document.createElement('p')
+    const content = document.createElement('div')
+    const msg = document.createElement('p')
     const updateBtn = document.createElement('button')
 
-    content.innerText = 'A new version of this site is available.'
+    msg.innerText = 'A new version of this site is available.'
     updateBtn.innerText = 'update'
     updateBtn.addEventListener('click', onUpdate)
+    content.appendChild(msg)
     content.appendChild(updateBtn)
+    content.classList.add('prompt')
 
     new Notification(content)
 }

@@ -21,6 +21,14 @@
         transform: translate(150%, 0);
     }
 }
+.notification .prompt {
+    display:flex;
+    align-items: center;
+}
+.notification .prompt > p {
+    flex: 1 0 0%;
+    padding-right: 1rem;
+}
 .notification.active {
     transform: translate(0, 0);
 }
