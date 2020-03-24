@@ -7,17 +7,16 @@ const html = htm.bind(h)
 const Post = createClass({
     render() {
         const entry = this.props.entry
+        const title = entry.getIn(['data', 'title'], null)
+        const date = entry.getIn(['data', 'date'], new Date())
+        const formattedDate = date ? format(date, 'dd LLLL yyyy') : ''
+
         return html`
             <main class="main">
                 <article class="post">
                     <header>
-                        <h1>${entry.getIn(['data', 'title'], null)}</h1>
-                        <time
-                            >${format(
-                                entry.getIn(['data', 'date'], new Date()),
-                                'dd LLLL yyyy'
-                            )}</time
-                        >
+                        <h1>${title}</h1>
+                        <time>${formattedDate}</time>
                     </header>
                     <div class="content">
                         ${this.props.widgetFor('body')}
