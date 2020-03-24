@@ -9,7 +9,9 @@ html {
     min-height: 100vh;
 }
 
-.site > * {
+.header,
+.main,
+.footer {
     padding: var(--spacing);
 }
 

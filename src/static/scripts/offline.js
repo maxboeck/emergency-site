@@ -3,7 +3,7 @@ let isRefreshing
 
 class Notification {
     constructor(content, timeout = false) {
-        this.$el = document.getElementById('notification')
+        this.$container = document.getElementById('notifications')
         this.content = content
         this.timeout = timeout
 
@@ -11,38 +11,53 @@ class Notification {
     }
 
     init() {
-        this.$el.innerHTML = ''
-
-        if (typeof this.content === 'string') {
-            this.$el.innerHTML = this.content
-        } else {
-            this.$el.appendChild(this.content)
-        }
-
+        this.$container.innerHTML = ''
+        this.build()
         this.show()
+
         if (this.timeout) {
             window.setTimeout(() => this.hide(), this.timeout)
         }
     }
 
+    build() {
+        this.$notification = document.createElement('div')
+        this.$notification.classList.add('notification')
+
+        if (typeof this.content === 'string') {
+            const $msg = document.createElement('p')
+            $msg.innerText = this.content
+            this.$notification.appendChild($msg)
+        } else {
+            this.$notification.appendChild(this.content)
+        }
+
+        this.$container.appendChild(this.$notification)
+    }
+
     show() {
-        this.$el.removeAttribute('hidden')
-        window.setTimeout(() => this.$el.classList.add('active'), 0)
+        window.setTimeout(() => this.$notification.classList.add('active'), 0)
     }
 
     hide() {
         const transitionHandler = () => {
-            this.$el.innerHTML = ''
-            this.$el.setAttribute('hidden', true)
-            this.$el.removeEventListener('transitionend', transitionHandler)
+            this.$notification.removeEventListener(
+                'transitionend',
+                transitionHandler
+            )
+            this.$container.removeChild(this.$notification)
         }
-        this.$el.addEventListener('transitionend', transitionHandler)
-        this.$el.classList.remove('active')
+        this.$notification.addEventListener('transitionend', transitionHandler)
+        this.$notification.classList.remove('active')
     }
 }
 
-function showInitialServiceWorkerNotice() {
-    new Notification('This site is now available offline.')
+function refresh() {
+    if (isRefreshing) {
+        return
+    }
+    window.location.reload()
+    isRefreshing = true
 }
 
 function showNewVersionNotice() {
@@ -63,7 +78,7 @@ function offlineHandler() {
         if (typeof navigator.onLine !== 'undefined' && !navigator.onLine) {
             new Notification(
                 'You are currently offline. You can still use this site, but content might not be up to date.',
-                5000
+                10000
             )
         }
     }
@@ -71,7 +86,6 @@ function offlineHandler() {
     window.addEventListener('offline', checkConnectivity)
     checkConnectivity()
 }
-window.addEventListener('load', offlineHandler)
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').then(reg => {
@@ -87,11 +101,6 @@ if ('serviceWorker' in navigator) {
         })
     })
 
-    navigator.serviceWorker.addEventListener('controllerchange', function() {
-        if (isRefreshing) {
-            return
-        }
-        window.location.reload()
-        isRefreshing = true
-    })
+    navigator.serviceWorker.addEventListener('controllerchange', refresh)
+    window.addEventListener('load', offlineHandler)
 }

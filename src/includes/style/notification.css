@@ -8,7 +8,7 @@
     background-color:#FFF;
     font-size: 1rem;
     transform: translate(0, 100%);
-    transition: transform .25s ease; 
+    transition: transform .3s ease; 
     box-shadow:0 0 12px rgba(0,0,0,0.25);
 }
 @media screen and (min-width: 40em) {

@@ -30,7 +30,7 @@ button {
     text-transform: uppercase;
     color: var(--brand-color);
     background-color:#FFF;
-    border-color: var(--brand-color);
+    border:2px solid var(--brand-color);
 }
 .icon {
     display:inline-block;
