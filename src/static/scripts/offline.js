@@ -53,7 +53,7 @@ class Notification {
 }
 
 function refresh() {
-    if (isRefreshing) {
+    if (isRefreshing || !navigator.serviceWorker.controller) {
         return
     }
     window.location.reload()
