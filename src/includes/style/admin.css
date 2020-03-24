@@ -1,0 +1,9 @@
+/* 
+    this file is only relevant for the admin preview and 
+    should not be included in the main inlined CSS (css.njk) 
+*/
+
+/* editor inserts an extra div wrapper in the post body. */
+.content > [class^="css-"] > * + * {
+    margin-top: 1em;
+}
