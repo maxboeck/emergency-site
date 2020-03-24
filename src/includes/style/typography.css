@@ -25,6 +25,17 @@ a:hover {
 a:focus {
     outline: 5px solid;
 }
+button {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--brand-color);
+    background-color:#FFF;
+    border:2px solid var(--brand-color);
+}
+button:hover {
+    background-color: var(--brand-color);
+    color:#FFF;
+}
 .icon {
     display:inline-block;
     width: auto;

@@ -1,0 +1,34 @@
+.notification {
+    position:fixed;
+    z-index: 100;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 1rem;
+    background-color:#FFF;
+    font-size: 1rem;
+    transform: translate(0, 100%);
+    transition: transform .3s ease; 
+    box-shadow:0 0 12px rgba(0,0,0,0.25);
+}
+@media screen and (min-width: 40em) {
+    .notification {
+        left: auto;
+        bottom: auto;
+        right: var(--spacing);
+        top: var(--spacing);
+        max-width: 22em;
+        transform: translate(150%, 0);
+    }
+}
+.notification .prompt {
+    display:flex;
+    align-items: center;
+}
+.notification .prompt > p {
+    flex: 1 0 0%;
+    padding-right: 1rem;
+}
+.notification.active {
+    transform: translate(0, 0);
+}

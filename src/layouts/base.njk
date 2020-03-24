@@ -11,18 +11,14 @@
         {% include "meta.njk" %}
     </head>
     <body class="site">
+        {% include "notification.njk" %}
+
         {% include "header.njk" %}
         <main class="main">{{ content | safe }}</main>
         {% include "footer.njk" %}
 
         {% if build.env === 'production' %}
-        <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js');
-            });
-        }
-        </script>
+        <script src="{{ '/static/scripts/offline.js' | url }}" async defer></script>
         {% endif %}
     </body>
 </html>
