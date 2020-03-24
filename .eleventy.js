@@ -9,7 +9,7 @@ const transforms = require('./eleventy/transforms.js')
 const workboxOptions = {
     cacheId: 'emergency-site',
     swDest: './dist/sw.js',
-    globPatterns: ['**/*.html'],
+    globPatterns: ['**/*.html', 'static/scripts/offline.js'],
     globIgnores: ['admin/**/*', '404/**/*'],
     importScripts: ['/static/scripts/worker.js'],
     skipWaiting: false
