@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "A boilerplate for emergency information websites",
   "scripts": {
-    "build": "eleventy",
+    "build": "npm run clean && eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "start": "npm run serve"
+    "clean": "del-cli dist",
+    "start": "npm run clean && npm run serve"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "clean-css": "^4.2.3",
+    "del-cli": "^3.0.0",
     "dotenv": "^8.2.0",
     "eleventy-plugin-pwa": "^1.0.8",
     "html-minifier": "^4.0.0",
