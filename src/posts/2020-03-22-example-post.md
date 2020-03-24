@@ -17,7 +17,7 @@ In response to mounting cases, states have begun closing schools, banning large 
 
 To avoid spreading the disease, the Centers for Disease Control and Prevention also recommends basic precautions such as hand-washing and cleaning frequently touched surfaces every day.
 
-* Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub
+* Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand sanitizer
 * Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze
 * Avoid close contact (1 meter or 3 feet) with people who are unwell
 * Stay home and self-isolate from others in the household if you feel unwell
