@@ -19,7 +19,9 @@ const Post = createClass({
                             )}</time
                         >
                     </header>
-                    ${this.props.widgetFor('body')}
+                    <div class="content">
+                        ${this.props.widgetFor('body')}
+                    </div>
                 </article>
             </main>
         `
