@@ -1,5 +1,5 @@
 :root {
-    --brand-color: #F00;
+    --brand-color: {% if meta.primaryColor %}{{ meta.primaryColor }}{% else %}#F00{% endif %};
     --spacing: 1em;
     --font-size: 1.25rem;
 }

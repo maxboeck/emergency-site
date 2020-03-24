@@ -2,7 +2,7 @@
 permalink: /static/styles/style.css
 ---
 {%- set css -%}
-    {% include "css.njk" %}
+    {% include "inline-css.njk" %}
     {% include "style/admin.css" %}
 {%- endset -%}
 {{ css | cssmin | safe }}
