@@ -1,8 +1,13 @@
 <footer class="footer">
+    <div>
     {% if meta.contact.email %}
         <p><a href="mailto:{{ meta.contact.email }}">{{ meta.contact.email }}</a></p>
     {% endif %}
     {% if meta.contact.telephone %}
         <p><a href="tel:{{ meta.contact.telephone }}">{{ meta.contact.telephone }}</a></p>
     {% endif %}
+    </div>
+    <div>
+        <p>Last Update: {{ build.timestamp | dateToFormat("dd LLLL yyyy, t") }}</p>
+    </div>
 </footer>

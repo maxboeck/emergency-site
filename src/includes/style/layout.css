@@ -29,5 +29,9 @@ html {
 
 .footer {
     flex:none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-end;
     background-color: #E4E4E4;
 }
