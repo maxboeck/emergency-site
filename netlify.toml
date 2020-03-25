@@ -2,11 +2,11 @@
     command = "npm run build"
     publish = "dist"
 
-[build.environment]
-    NODE_VERSION = "10.15"
-
 [context.production.environment]
     NODE_ENV = "production"
+
+[template.environment]
+    TZ = "set the timezone for your site, e.g. America/New_York"
 
 [[redirects]]
     from = "*"
