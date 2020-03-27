@@ -17,18 +17,26 @@ This project aims to enable developers to quickly publish a simple website that 
 
 ## Getting Started
 
-The easiest way to get started is by forking this repo and deploying it to Netlify. You can do that by clicking this button:  
+To publish a website with this template, there are two options, depending on your technical skillset. Choose which one describes you best:
+
+* [I'm not a developer](https://github.com/maxboeck/emergency-site/blob/master/src/posts/2020-03-20-getting-started.md#no-code-setup), I just want to set up a website
+* [I have basic knowledge](https://github.com/maxboeck/emergency-site/blob/master/src/posts/2020-03-20-getting-started.md#advanced-setup) of how to use `npm` and the command line 
+
+## One-Click Deployment
+
+The easiest way to go live is by forking this repo and deploying it to Netlify. You can do that by clicking this button:  
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/emergency-site) 
 
 To customize the site, edit `src/data/meta.json` with your details, and replace the markdown files in `src/posts` with your content.
 
-## Installation
+## Local Development
 
 To run this locally, you need to install [Node](https://nodejs.org/en/) first.
+You can run these on the command line in the root of your project:
 
-**available commands:**
+* `npm start`: starts development server
+* `npm run build`: generates a production build
+* `npm run debug`: runs eleventy with debug output
 
-* `npm start`: start development server
-* `npm run build`: generate a production build
-* `npm run debug`: run eleventy with debug output
+To customize the site, edit `src/data/meta.js` with your details, or set the corresponding [environment variables](#configure-your-site) in a new `.env` file in the root folder of the project.
