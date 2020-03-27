@@ -6,7 +6,14 @@
     NODE_ENV = "production"
 
 [template.environment]
-    TZ = "set the timezone for your site, e.g. America/New_York"
+    META_TITLE = "the title of your site"
+    META_URL = "the full url, e.g. 'https://emergency-site.dev'"
+    META_DESC = "a short description of your site"
+    META_LANG = "the language, e.g. 'en', 'de', ..."
+    META_COLOR = "the primary color hex code, e.g. '#FF0000'"
+    META_EMAIL = "the main contact email address"
+    META_TELEPHONE = "the main contact phone number"
+    # TZ = "the timezone for your site, e.g. America/New_York"
 
 [[redirects]]
     from = "*"
