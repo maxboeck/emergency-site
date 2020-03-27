@@ -25,6 +25,16 @@ a:hover {
 a:focus {
     outline: 5px solid;
 }
+table {
+    text-align:left;
+    font-size: 1.25rem;
+    border-collapse: collapse;
+}
+table th,
+table td {
+    border: 1px solid;
+    padding:.125em .25em;
+}
 button {
     font-weight: bold;
     text-transform: uppercase;
@@ -35,6 +45,11 @@ button {
 button:hover {
     background-color: var(--brand-color);
     color:#FFF;
+}
+code {
+    display:inline-block;
+    padding:.125em .25em;
+    background-color: rgba(0,0,0,0.07);
 }
 .icon {
     display:inline-block;
