@@ -3,25 +3,26 @@ title: Crisis Information Example Post
 date: 2020-03-22T14:00
 ---
 
-Since the first U.S. case of the coronavirus was identified in Washington state on Jan. 21, health officials have identified thousands of cases across the United States. By March 17, the virus had expanded its presence from several isolated clusters in Washington, New York and California to all 50 states and the District of Columbia. To date, there have been over [120 deaths](https://coronavirus.jhu.edu/map.html) across the country.
+This is an example of how to publish critical information as posts on this website.
 
-## Social Distancing
+## Coronavirus (COVID-19): what you need to do
 
-Social distancing is widely seen as the best available means to "flatten the curve of the pandemic," a phrase that epidemiologists use to describe slowing the spread of infection. This approach can save lives by keeping local health care systems from being overwhelmed.
+* Stay at home
+* Only go outside for food, health reasons or work (but only if you cannot work from home)
+* Stay 2 meters (6ft) away from other people
+* Wash your hands as soon as you get home
+* You can spread the virus even if you don’t have symptoms.
 
-![a chart of covid-19 cases](/static/images/uploads/chart.jpg)
+## Staying at home and away from others (social distancing)
 
-In response to mounting cases, states have begun closing schools, banning large gatherings and urging people to stay home when possible. On Monday, the white house announced [new guidelines](https://www.whitehouse.gov/briefings-statements/coronavirus-guidelines-america/) recommending that Americans avoid gathering in groups of more than 10 people, discretionary travel and going out to eat.
+The single most important action we can all take, in fighting coronavirus, is to stay at home in order to protect the healthcare system and save lives.
 
-### Countermeasures
+When we reduce our day-to-day contact with other people, we will reduce the spread of the infection. The most important measures are:
 
-To avoid spreading the disease, the Centers for Disease Control and Prevention also recommends basic precautions such as hand-washing and cleaning frequently touched surfaces every day.
+1. Requiring people to stay at home, except for very limited purposes.
+2. Closing certain businesses and venues.
+3. Stopping all gatherings of more than two people in public.
 
-* Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand sanitizer
-* Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze
-* Avoid close contact (1 meter or 3 feet) with people who are unwell
-* Stay home and self-isolate from others in the household if you feel unwell
+Every person must comply with these new measures, which came into effect on Monday 23 March. The relevant authorities, including the police, have been given the powers to enforce them – including through fines and dispersing gatherings.
 
-Globally, the respiratory disease has spread to dozens of countries and has killed several thousand people since it was first reported in Wuhan, China, in December.
-
-Warnings issued by the CDC recommend avoiding nonessential travel to dozens of countries with outbreaks of COVID-19, including China, Iran, South Korea and much of Europe. The U.S. government has banned travel from Europe, although the ban makes exceptions, including for U.S. citizens and legal permanent residents.
+The government will look again at these measures after three weeks, and relax them if the evidence shows this is possible.
