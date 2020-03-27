@@ -11,12 +11,11 @@ const {
 
 module.exports = {
     title: META_TITLE || 'Emergency Site',
-    url: META_URL || 'https://emergency-site.dev',
-    description:
-        META_DESC || 'A boilerplate for emergency information websites.',
+    url: META_URL || '',
+    description: META_DESC || 'An emergency information website.',
     lang: META_LANG || 'en',
     primaryColor: META_COLOR || '#FF0000',
-    email: META_EMAIL || 'information@emergency.org',
-    telephone: META_TELEPHONE || '+01 234 567 890',
+    email: META_EMAIL || undefined,
+    telephone: META_TELEPHONE || undefined,
     dateFormat: 'dd LLLL yyyy'
 }
