@@ -53,7 +53,7 @@ class Notification {
 }
 
 function refresh() {
-    if (isRefreshing || !navigator.serviceWorker.controller) {
+    if (isRefreshing) {
         return
     }
     window.location.reload()
@@ -91,12 +91,13 @@ function offlineHandler() {
 }
 
 if ('serviceWorker' in navigator) {
+    const isInitialInstall = !navigator.serviceWorker.controller
     navigator.serviceWorker.register('/sw.js').then(reg => {
         reg.addEventListener('updatefound', () => {
             worker = reg.installing
             worker.addEventListener('statechange', () => {
                 if (worker.state === 'installed') {
-                    if (navigator.serviceWorker.controller) {
+                    if (!isInitialInstall) {
                         showNewVersionNotice()
                     }
                 }
