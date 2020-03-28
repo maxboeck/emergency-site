@@ -84,7 +84,7 @@ These settings are available:
             <td><code>META_COLOR</code></td>
             <td>the primary color <a href="https://www.color-hex.com/">hex code</a> (optional)</td>
             <td>#1D70B8</td>
-            <td>#FF0000</td>
+            <td>#DB0000</td>
         </tr>
         <tr>
             <td><code>META_EMAIL</code></td>
