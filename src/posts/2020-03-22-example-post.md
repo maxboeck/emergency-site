@@ -1,5 +1,5 @@
 ---
-title: Crisis Information Example Post
+title: Crisis information example post
 date: 2020-03-22T14:00
 ---
 

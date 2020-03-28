@@ -26,8 +26,12 @@ a:focus {
     outline: 5px solid;
 }
 table {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
     text-align:left;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     border-collapse: collapse;
 }
 table th,
@@ -45,6 +49,9 @@ button {
 button:hover {
     background-color: var(--brand-color);
     color:#FFF;
+}
+pre {
+    overflow-x:auto;
 }
 code {
     display:inline-block;
