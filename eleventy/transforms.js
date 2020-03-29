@@ -7,10 +7,11 @@ const preset = Object.assign(htmlnano.presets.safe, {
 })
 
 module.exports = {
-    htmlmin: async function(content, outputPath) {
+    htmlmin: async function (content, outputPath) {
         if (
             outputPath &&
             outputPath.endsWith('.html') &&
+            process.env.ELEVENTY_ENV === 'production' ||
             process.env.NODE_ENV === 'production'
         ) {
             const { html } = await htmlnano.process(
