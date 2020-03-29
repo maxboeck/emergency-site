@@ -19,6 +19,11 @@ module.exports = {
                 {
                     removeUnusedCss: {
                         tool: 'purgeCSS'
+                    },
+                    minifySvg: {
+                        plugins: [
+                            { removeViewBox: false }
+                        ],
                     }
                 },
                 preset
