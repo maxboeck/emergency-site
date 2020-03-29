@@ -1,7 +1,7 @@
 const htmlnano = require('htmlnano')
 
 const preset = Object.assign(htmlnano.presets.safe, {
-    collapseWhitespace: 'all',
+    collapseWhitespace: 'conservative',
     removeComments: 'all',
     removeRedundantAttributes: true
 })
