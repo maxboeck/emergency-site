@@ -107,11 +107,31 @@ When the site is published, you'll see a live green link under the site title.
 
 ### Set a domain
 
-TBA: this section is currently a work in progress.
+You can set a custom domain (like "www.yoursite.com") in your Netlify site settings. From your site's main admin page, select Domain Settings:
+
+![domain settings](/static/images/uploads/netlify-deploy-step3.png)
+
+By default you'll get a domain like `yoursite.netlify.com` - to connect a custom one you own, click on "add custom domain":
+
+![add custom domain](/static/images/uploads/netlify-deploy-step4.png)
+
+For more information on how to do this, [see the Netlify docs](https://docs.netlify.com/domains-https/custom-domains/).
 
 ### Enable the Content Management System
 
-TBA: this section is currently a work in progress.
+The last step is to configure the built-in CMS, so you can edit the site's content through a dedicated interface.
+
+The first thing to enable is the Netlify "Identity" service. This allows users to log in with an email address and password. In your main dashboard, select "Identity", then click on "Enable Identity".
+
+![enable identity](/static/images/uploads/netlify-deploy-step5.png)
+
+The CMS needs a way to connect to your Github account. To do this, go to Settings > Identity > Services. You'll see an option to enable "Git Gateway". Click the button and follow the instructions from there.
+
+![enable git gateway](/static/images/uploads/netlify-deploy-step6.png)
+
+After you're set up, create a new user by inviting yourself via email. You can then log in at `www.your-site.com/admin`.
+
+For more information on Netlify CMS, [see the docs](https://www.netlifycms.org/docs/intro/).
 
 --------
 
