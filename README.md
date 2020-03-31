@@ -96,4 +96,4 @@ You can run these on the command line in the root of your project:
 * `npm run build`: generates a production build
 * `npm run debug`: runs eleventy with debug output
 
-To customize the site, edit `src/data/meta.js` with your details, or set the corresponding [environment variables](https://github.com/maxboeck/emergency-site/blob/master/src/posts/2020-03-20-getting-started.md#configure-your-site) in a new `.env` file in the root folder of the project.
+To customize the site, edit `src/data/meta.js` with your details, or set the corresponding environment variables. Replace the markdown files in `src/posts` with your content.
