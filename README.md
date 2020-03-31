@@ -24,6 +24,62 @@ To publish a website with this template, there are two options, depending on you
 
 Read the [Getting Started Docs](https://github.com/maxboeck/emergency-site/blob/master/src/posts/2020-03-20-getting-started.md)
 
+## Configuration
+
+It's possible to customize some parts of the website through environment variables. You can set these up on your local machine in an `.env` file or define them through the Netlify admin interface.
+
+The available settings are:
+
+<table>
+    <thead>
+        <tr><th>Name</th><th>Description</th><th>Example</th><th>Default</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>META_TITLE</code></td>
+            <td>the title of your site</td>
+            <td>COVID-19 Information</td>
+            <td>Emergency Site</td>
+        </tr>
+        <tr>
+            <td><code>META_URL</code></td>
+            <td>the full url of your site</td>
+            <td>https://www.covid19.org</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td><code>META_DESC</code></td>
+            <td>a short description of your site</td>
+            <td>Updates on the current state of the pandemic.</td>
+            <td>An emergency information website.</td>
+        </tr>
+        <tr>
+            <td><code>META_LANG</code></td>
+            <td>the 2-letter <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">language code</a> of your site</td>
+            <td>de</td>
+            <td>en</td>
+        </tr>
+        <tr>
+            <td><code>META_COLOR</code></td>
+            <td>the primary color <a href="https://www.color-hex.com/">hex code</a> (optional)</td>
+            <td>#1D70B8</td>
+            <td>#DB0000</td>
+        </tr>
+        <tr>
+            <td><code>META_EMAIL</code></td>
+            <td>your main contact email (optional)</td>
+            <td>contact@covid19.org</td>
+            <td>N/A</td>
+        </tr> 
+        <tr>
+            <td><code>META_TELEPHONE</code></td>
+            <td>your main contact phone number (optional)</td>
+            <td>+01 23 456 789 00</td>
+            <td>N/A</td>
+        </tr> 
+    </tbody>   
+</table>
+
 ## One-Click Deployment
 
 The easiest way to go live is by forking this repo and deploying it to Netlify.  
