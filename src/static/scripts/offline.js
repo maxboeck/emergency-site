@@ -1,6 +1,8 @@
+// Variables
 let worker
 let isRefreshing
 
+// Notification class, handles on-screen toast messages
 class Notification {
     constructor(content, timeout = false) {
         this.container = document.getElementById('notifications')
@@ -52,6 +54,7 @@ class Notification {
     }
 }
 
+// Refresh helper func to reload the page for Service Worker update
 function refresh() {
     if (isRefreshing) {
         return
@@ -60,6 +63,7 @@ function refresh() {
     isRefreshing = true
 }
 
+// Build an display a message to announce an updated Service Worker
 function showNewVersionNotice() {
     const onUpdate = () => worker.postMessage({ action: 'skipWaiting' })
     const content = document.createElement('div')
@@ -76,6 +80,7 @@ function showNewVersionNotice() {
     new Notification(content)
 }
 
+// Build and display a message to announce a loss of connectivity
 function offlineHandler() {
     const checkConnectivity = () => {
         if (typeof navigator.onLine !== 'undefined' && !navigator.onLine) {
@@ -91,20 +96,25 @@ function offlineHandler() {
 }
 
 if ('serviceWorker' in navigator) {
+    // Check if a SW is present to begin with
     const isInitialInstall = !navigator.serviceWorker.controller
+
+    // Service Worker Registration
     navigator.serviceWorker.register('/sw.js').then(reg => {
         reg.addEventListener('updatefound', () => {
             worker = reg.installing
             worker.addEventListener('statechange', () => {
-                if (worker.state === 'installed') {
-                    if (!isInitialInstall) {
-                        showNewVersionNotice()
-                    }
+                // Listen for the update event and wait till the new SW is ready
+                if (worker.state === 'installed' && !isInitialInstall) {
+                    showNewVersionNotice()
                 }
             })
         })
     })
 
+    // If the new Service Worker is ready and the user has clicked update, reload the page
     navigator.serviceWorker.addEventListener('controllerchange', refresh)
+
+    // Initially check if the client is offline
     window.addEventListener('load', offlineHandler)
 }
