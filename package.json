@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A boilerplate for emergency information websites",
   "scripts": {
-    "build": "npm run clean && eleventy",
+    "build": "npm run clean && cross-env ELEVENTY_ENV=production eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
@@ -20,10 +20,11 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "clean-css": "^4.2.3",
+    "cross-env": "^7.0.2",
     "del-cli": "^3.0.0",
     "dotenv": "^8.2.0",
     "eleventy-plugin-pwa": "^1.0.8",
-    "html-minifier": "^4.0.0",
+    "htmlnano": "^0.2.5",
     "luxon": "^1.22.0",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5"

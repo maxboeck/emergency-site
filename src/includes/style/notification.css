@@ -1,15 +1,16 @@
+/*! purgecss start ignore */
 .notification {
-    position:fixed;
+    position: fixed;
     z-index: 100;
-    left:0;
-    right:0;
-    bottom:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding: 1rem;
-    background-color:#FFF;
+    background-color: #fff;
     font-size: 1rem;
     transform: translate(0, 100%);
-    transition: transform .3s ease; 
-    box-shadow:0 0 12px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 40em) {
     .notification {
@@ -22,7 +23,7 @@
     }
 }
 .notification .prompt {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 .notification .prompt > p {
@@ -32,3 +33,4 @@
 .notification.active {
     transform: translate(0, 0);
 }
+/*! purgecss end ignore */
