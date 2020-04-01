@@ -1,4 +1,4 @@
 module.exports = {
-    env: process.env.NODE_ENV,
+    env: process.env.ELEVENTY_ENV || 'development',
     timestamp: new Date()
 }
