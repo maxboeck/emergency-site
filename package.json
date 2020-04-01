@@ -8,8 +8,7 @@
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
     "clean": "del-cli dist",
-    "start": "npm run clean && npm run serve",
-    "size": "size-limit"
+    "start": "npm run clean && npm run serve"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,6 @@
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "@size-limit/preset-small-lib": "^4.4.2",
     "clean-css": "^4.2.3",
     "cross-env": "^7.0.2",
     "del-cli": "^3.0.0",
@@ -29,7 +27,6 @@
     "htmlnano": "^0.2.5",
     "luxon": "^1.22.0",
     "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.5",
-    "size-limit": "^4.4.2"
+    "markdown-it-anchor": "^5.2.5"
   }
 }
