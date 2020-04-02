@@ -51,6 +51,7 @@ module.exports = function(config) {
 
     // Pass-through files
     config.addPassthroughCopy('admin')
+    config.addPassthroughCopy('src/email')
     config.addPassthroughCopy('src/static')
     config.addPassthroughCopy('src/robots.txt')
 
