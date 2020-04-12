@@ -58,6 +58,10 @@ code {
     padding:.125em .25em;
     background-color: rgba(0,0,0,0.07);
 }
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+}
 .icon {
     display:inline-block;
     width: auto;
