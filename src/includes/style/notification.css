@@ -33,15 +33,4 @@
 .notification.active {
     transform: translate(0, 0);
 }
-button {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--brand-color);
-    background-color:#FFF;
-    border:2px solid var(--brand-color);
-}
-button:hover {
-    background-color: var(--brand-color);
-    color:#FFF;
-}
 /*! purgecss end ignore */

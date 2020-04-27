@@ -1,0 +1,19 @@
+/*! purgecss start ignore */
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--brand-color);
+    background-color:#FFF;
+    border:2px solid var(--brand-color);
+    vertical-align: middle;
+    user-select: none;
+    text-align: center;
+    white-space: nowrap;
+}
+button:hover,
+button:focus {
+    background-color: var(--brand-color);
+    color:#FFF;
+}
+/*! purgecss end ignore */
