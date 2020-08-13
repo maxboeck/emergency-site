@@ -39,17 +39,6 @@ table td {
     border: 1px solid;
     padding:.125em .25em;
 }
-button {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--brand-color);
-    background-color:#FFF;
-    border:2px solid var(--brand-color);
-}
-button:hover {
-    background-color: var(--brand-color);
-    color:#FFF;
-}
 pre {
     overflow-x:auto;
 }
@@ -57,6 +46,10 @@ code {
     display:inline-block;
     padding:.125em .25em;
     background-color: rgba(0,0,0,0.07);
+}
+.logo {
+    font-weight: bold;
+    text-decoration: none;
 }
 .icon {
     display:inline-block;

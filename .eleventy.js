@@ -10,25 +10,25 @@ const workboxOptions = {
     cacheId: 'emergency-site',
     swDest: './dist/sw.js',
     globPatterns: ['**/*.html', 'static/scripts/offline.js'],
-    globIgnores: ['admin/**/*', '404/**/*'],
+    globIgnores: ['admin/**/*', 'email/**/*', '404/**/*'],
     importScripts: ['/static/scripts/worker.js'],
     skipWaiting: false
 }
 
 require('dotenv').config()
 
-module.exports = function(config) {
+module.exports = function (config) {
     // Plugins
     config.addPlugin(pluginRss)
     config.addPlugin(pluginPWA, workboxOptions)
 
     // Filters
-    Object.keys(filters).forEach(filterName => {
+    Object.keys(filters).forEach((filterName) => {
         config.addFilter(filterName, filters[filterName])
     })
 
     // Transform
-    Object.keys(transforms).forEach(transformName => {
+    Object.keys(transforms).forEach((transformName) => {
         config.addTransform(transformName, transforms[transformName])
     })
 
@@ -51,6 +51,7 @@ module.exports = function(config) {
 
     // Pass-through files
     config.addPassthroughCopy('admin')
+    config.addPassthroughCopy('src/email')
     config.addPassthroughCopy('src/static')
     config.addPassthroughCopy('src/robots.txt')
 

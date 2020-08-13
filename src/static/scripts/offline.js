@@ -100,7 +100,7 @@ if ('serviceWorker' in navigator) {
     const isInitialInstall = !navigator.serviceWorker.controller
 
     // Service Worker Registration
-    navigator.serviceWorker.register('/sw.js').then(reg => {
+    navigator.serviceWorker.register('/sw.js').then((reg) => {
         reg.addEventListener('updatefound', () => {
             worker = reg.installing
             worker.addEventListener('statechange', () => {
@@ -118,3 +118,5 @@ if ('serviceWorker' in navigator) {
     // Initially check if the client is offline
     window.addEventListener('load', offlineHandler)
 }
+
+document.documentElement.classList.remove('no-js')

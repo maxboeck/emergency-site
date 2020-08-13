@@ -1,18 +1,32 @@
-const htmlmin = require('html-minifier')
+const htmlnano = require('htmlnano')
+
+const preset = Object.assign(htmlnano.presets.safe, {
+    removeRedundantAttributes: true
+})
 
 module.exports = {
-    htmlmin: function(content, outputPath) {
+    htmlmin: async function(content, outputPath) {
         if (
             outputPath &&
             outputPath.endsWith('.html') &&
-            process.env.NODE_ENV === 'production'
+            process.env.ELEVENTY_ENV === 'production'
         ) {
-            return htmlmin.minify(content, {
-                useShortDoctype: true,
-                removeComments: true,
-                collapseWhitespace: true
-            })
+            const { html } = await htmlnano.process(
+                content,
+                {
+                    removeUnusedCss: {
+                        tool: 'purgeCSS'
+                    },
+                    minifySvg: {
+                        plugins: [{ removeViewBox: false }]
+                    }
+                },
+                preset
+            )
+
+            return html
         }
+
         return content
     }
 }

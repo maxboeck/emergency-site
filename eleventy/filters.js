@@ -16,6 +16,6 @@ module.exports = {
     },
 
     cssmin: function(css) {
-        return new CleanCSS({}).minify(css).styles
+        return new CleanCSS({ level: 2 }).minify(css).styles
     }
 }
