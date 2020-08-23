@@ -15,6 +15,14 @@
     META_TELEPHONE = "the main contact phone number"
     # TZ = "the timezone for your site, e.g. America/New_York"
 
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Frame-Options = "DENY"
+        X-XSS-Protection = "1; mode=block"
+        X-Content-Type-Options = "nosniff"
+        Referrer-Policy= "no-referrer-when-downgrade"
+
 [[redirects]]
     from = "*"
     to = "/404"
