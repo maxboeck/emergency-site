@@ -2,9 +2,11 @@
 <html class="no-js" lang="{{ meta.lang }}">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{%- if title -%}{{ title }} | {{ meta.title }}{%- else -%}{{ meta.title }}{%- endif -%}</title>
+        
         {%- set css -%}{% include "inline-css.njk" %}{%- endset -%}
         <style>{{ css | cssmin | safe }}</style>
 
