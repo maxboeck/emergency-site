@@ -55,12 +55,11 @@ class Notification {
 }
 
 // Refresh helper func to reload the page for Service Worker update
-async function refresh() {
+function refresh() {
     if (isRefreshing) {
         return
     }
-    const newWorker = (await navigator.serviceWorker.getRegistration())?.active
-    if (worker.state === 'activated' && newWorker.state === 'activating') {
+    if (worker.state === 'activated') {
         isRefreshing = true
         window.location.reload()
     }
