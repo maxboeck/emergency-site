@@ -23,6 +23,6 @@ When we reduce our day-to-day contact with other people, we will reduce the spre
 2. Closing certain businesses and venues.
 3. Stopping all gatherings of more than two people in public.
 
-Every person must comply with these new measures, which came into effect on Monday 23 March. The relevant authorities, including the police, have been given the powers to enforce them – including through fines and dispersing gatherings.
+Every person must comply with these new measures, which came into effect on Monday 23 March. The relevant authorities, including the police, have been given the powers to enforce them- including through fines and dispersing gatherings.
 
 The government will look again at these measures after three weeks, and relax them if the evidence shows this is possible.
