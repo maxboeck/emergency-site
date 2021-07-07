@@ -65,3 +65,24 @@ code {
 .anchor {
     text-decoration: none;
 }
+blockquote {
+    background: rgba(0,0,0,0.03);
+    border-left: 10px solid rgba(0,0,0,0.1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 1.5em 0;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: rgba(0,0,0,0.15);
+    content: open-quote;
+    font-size: 5em;
+    line-height: 0;
+    margin-right: 0.25em;
+    margin-top: 0.4em;
+    float:left;
+}
+blockquote p {
+    display: inline;
+}
