@@ -1,4 +1,4 @@
-# Emergency Site Kit
+#  Emergency Site Kit
 
 A starter kit for emergency information websites. (WIP) ([Demo Site](https://emergency-site.dev))
 
