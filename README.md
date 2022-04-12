@@ -1,6 +1,6 @@
 # Emergency Site Kit
 
-A starter kit for emergency information websites. (WIP) ([Demo Site](https://emergency-site.dev))
+A starter kit for emergency information websites. (WIP) ([Demo Site](https://emergency-site.netlify.app/))
 
 In case of emergency, many organizations need a quick way to publish critical information. Existing CMS websites are often unable to handle sudden spikes in traffic, and local network infrastructure might be damaged, leaving those affected with poor mobile connections.
 
